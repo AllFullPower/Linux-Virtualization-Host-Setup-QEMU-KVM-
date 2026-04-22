@@ -33,5 +33,18 @@ It was critical to change the ownership of the directory where the new partition
 First, I checked if virtualization was available on my PC with the next two commands:
 - `lscpu | grep virtualization`
 - `lsmod | grep kvm_amd`
+  
+<img width="554" height="34" alt="Pasted image 20260410155813" src="https://github.com/user-attachments/assets/5fe174fb-771a-4aa0-ba33-a9e1420fbaad" />
+<br/>
+<img width="481" height="49" alt="Pasted image 20260410155929" src="https://github.com/user-attachments/assets/d8c3f47a-2809-4066-ab09-799f8408907a" />
+<br/>
+<br/>
+Installing the proper tools:
+<br/>
+<img width="825" height="443" alt="Pasted image 20260410162007" src="https://github.com/user-attachments/assets/18979b64-c2f0-4a77-93df-dfd389900284" />
+
+
+
+
 
 
