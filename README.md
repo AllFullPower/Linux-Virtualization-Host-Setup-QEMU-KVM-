@@ -1,10 +1,21 @@
 # Linux Virtualization Host Setup (QEMU/KVM)
 
 ## Objective
+To enable virutalization on a host running Bazzite Linux by implementing dedicated logical storage and configuring a QEMU/KVM hypervisor. This setup will serve as the foundational infrastructure for future labs.
 
 ## Skills Learned
+- **Storage Administration:** Managed disks using `fdisk` to create logical partitions.
+- **Linux File System Management:** Formatted volumes with `ext4` and implemented persistent mounting via `/etc/fstab` with UUID identification.
+- **System Administration:** Resolved `systemd` mound conflicts using `daemon-reload` and managed Linux user groups for hardware-level access.
+- **Security Practices:** Verified installation media integrity using SHA-256 checksums and configured directory permission via `chown`.
+- **Hypervisor Troubleshooting:** Diagnosed and resolved VM boot failures related to virtualized hardware mapping (SATA CDROOM boot priority).
 
 ## Tools Used
+- **Host OS:** Bazzite Linux (Fedora-based, Immutable).
+- **Partitioning:** `fdisk`, `lsblk`.
+- **Hypervisor:** QEMU/KVM with `virt-manager`.
+- **Package Management:**`rpm-ostree` (Layered installation).
+- **CLI Utilities:** `systemctl`, `sha256sum`, `nano`, `chown`.
 
 # Steps Taken
 These are the steps I took to complete this project with some errors that came across included.
@@ -61,7 +72,7 @@ Then Checked it against the one generate by the .iso file:
 <img width="828" height="72" alt="Pasted image 20260412232800" src="https://github.com/user-attachments/assets/89f27e6e-5b9f-4055-bcb0-6121bf8f590c" />
 <br/>
 <br/>
-I created two storage volumes for different purposes one for images and the other for VMs, and taking advantage of the new partition:
+I created two storage volumes for different purposes one for images and the other for VMs while taking advantage of the new partition:
 <img width="755" height="527" alt="Pasted image 20260421221726" src="https://github.com/user-attachments/assets/04060af8-7227-4615-b133-ab3557b3239a" />
 <br/>
 <br/>
@@ -79,7 +90,7 @@ I solved just by selecting the kali image on the CDROM and then I noticed that i
 <img width="1140" height="789" alt="Pasted image 20260421214201" src="https://github.com/user-attachments/assets/b4d668cf-075b-449e-a9e3-4d3fa9295c89" />
 <br/>
 <br/>
-As a result, I was able to boot the machine, follow the installation process and use my new Kali Linux VM:
+As a result, I was able to boot the machine, I followed the installation process and used my new Kali Linux VM:
 <img width="1149" height="1070" alt="Pasted image 20260420231924" src="https://github.com/user-attachments/assets/7fd8594f-f21b-4040-8eec-f36e6a60412e" />
 
 
