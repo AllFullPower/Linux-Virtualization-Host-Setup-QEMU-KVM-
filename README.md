@@ -93,7 +93,14 @@ I solved just by selecting the kali image on the CDROM and then I noticed that i
 As a result, I was able to boot the machine, I followed the installation process and used my new Kali Linux VM:
 <img width="1149" height="1070" alt="Pasted image 20260420231924" src="https://github.com/user-attachments/assets/7fd8594f-f21b-4040-8eec-f36e6a60412e" />
 
+# More Labs
+This lab was the infrastructure for the next projects:
 
+- <b>Enterprise Lab: Windows Server & AD DS Deployment</b>
+  - [Enterprise Lab: Windows Server & AD DS Deployment](https://github.com/AllFullPower/Enterprise-Lab-Windows-Server-AD-DS-Deployment)
+
+- <b>Enterprise Help Desk Lab with Active Directory</b>
+  - [Enterprise Help Desk Lab with Active Directory](https://github.com/AllFullPower/Ticketing-System-integration-with-AD-Environment)
 
 
 
