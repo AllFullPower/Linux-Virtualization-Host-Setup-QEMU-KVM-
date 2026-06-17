@@ -17,7 +17,7 @@ To enable virutalization on a host running Bazzite Linux by implementing dedicat
 - **Package Management:**`rpm-ostree` (Layered installation).
 - **CLI Utilities:** `systemctl`, `sha256sum`, `nano`, `chown`.
 
-# Steps Taken
+# Taken Steps
 The following sections document the process used to complete this project, including the challenges encountered and the solutions implemented.
 <br/>
 ## Step 1. Creating the partition
